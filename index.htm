@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cipher encryptor by mrsw444</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section class="main">
+        <h1 class="main__header main__header--typing">
+            Substitution cipher's encryptor
+        </h1>
+        <div class="main__input">
+            <form action="" class="main__form">
+                <h2 class="main__header-2 main__header-2--comment">
+                    //codeKey:
+                </h2>
+                <input type="text" class="main__code-key" id="code-key-input" placeholder="type your code key here...">
+            </form>
+            <h2 class="main__header-2">
+                > your code key:
+            </h2>
+            <h2 class="main__header-2" id="code-key-added"></h2>
+        </div>
+        <div class="main__input">
+            <form action="" class="main__form">
+                <h2 class="main__header-2 main__header-2--comment">
+                    //MessageToEncrypt:
+                </h2>
+            <input type="text" class="main__code-key" id="message-input" placeholder="type your code key here...">
+        </form>
+            <h2 class="main__header-2">
+                > your message:
+            </h2>
+            <h2 class="main__header-2" id="message-added"></h2>
+            <button class="main__btn">
+                encryptMyMessage();
+            </button>
+            <form action="" class="main__form">
+                <h2 class="main__header-2 main__header-2--comment">
+                    //encryptedMesseage:
+                </h2>
+                <h2 class="main__header-2" id="finnish"></h2>
+            </form>
+        </div>
+    </section>
+
+   <script src="encryption.js"></script>
+</body>
+</html>

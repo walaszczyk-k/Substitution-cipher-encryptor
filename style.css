@@ -1,0 +1,347 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Inconsolata', monospace;
+  font-size: 10px;
+}
+
+body {
+  background-color: #111;
+  color: #ddd;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px 30px;
+}
+
+.main__header {
+  width: 92%;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 2.2rem;
+  color: #2f8f2f;
+}
+
+.main__header--typing {
+  -webkit-animation: typewriter 10s steps(44) 1.6s infinite alternate both, blinkTextCursor 600ms steps(44) infinite normal;
+          animation: typewriter 10s steps(44) 1.6s infinite alternate both, blinkTextCursor 600ms steps(44) infinite normal;
+}
+
+@-webkit-keyframes typewriter {
+  from {
+    width: 0;
+  }
+  4% {
+    width: 0;
+  }
+  60% {
+    width: 92%;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  4% {
+    width: 0;
+  }
+  60% {
+    width: 92%;
+  }
+}
+
+@-webkit-keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.main__input {
+  padding: 30px 0 0;
+}
+
+.main__header-2 {
+  padding: 10px 0;
+  font-size: 1.6rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.main__header-2--comment {
+  padding: 10px 0;
+  color: #777;
+  font-size: 1.8rem;
+}
+
+.main__code-key {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1.8rem;
+  background-color: rgba(48, 48, 48, 0.562);
+  color: #2f8f2f;
+  border: none;
+}
+
+.main__code-key:focus {
+  color: #2f8f2f;
+  outline: 0;
+  border-bottom: 2px solid #2f8f2f;
+}
+
+.main__btn {
+  width: 58%;
+  margin: 20px 0;
+  padding: 10px 0;
+  font-size: 1.8rem;
+  background-color: rgba(70, 172, 70, 0.733);
+  color: black;
+  border: 1px solid rgba(47, 143, 47, 0.247);
+}
+
+@media (max-width: 320px) {
+  .main__header {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+  @-webkit-keyframes typewriter {
+    from {
+      width: 0;
+    }
+    4% {
+      width: 0;
+    }
+    60% {
+      width: 100%;
+    }
+  }
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    4% {
+      width: 0;
+    }
+    60% {
+      width: 100%;
+    }
+  }
+  .main__header-2 {
+    font-size: 1.4rem;
+  }
+  .main__header-2--comment {
+    font-size: 1.4rem;
+  }
+  .main__code-key {
+    font-size: 1.8rem;
+  }
+  .main__btn {
+    width: 64%;
+    margin: 14px 0;
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 400px) {
+  .main__header {
+    width: 98%;
+    font-size: 2rem;
+  }
+  @-webkit-keyframes typewriter {
+    from {
+      width: 0;
+    }
+    4% {
+      width: 0;
+    }
+    60% {
+      width: 98%;
+    }
+  }
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    4% {
+      width: 0;
+    }
+    60% {
+      width: 98%;
+    }
+  }
+  .main__btn {
+    width: 60%;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 999px) {
+  .main__header {
+    width: 84%;
+    font-size: 4rem;
+  }
+  .main__header--typing {
+    -webkit-animation: typewriter 10s steps(44) 1.6s infinite alternate both, blinkTextCursor 400ms steps(44) infinite normal;
+            animation: typewriter 10s steps(44) 1.6s infinite alternate both, blinkTextCursor 400ms steps(44) infinite normal;
+  }
+  @-webkit-keyframes typewriter {
+    from {
+      width: 0;
+    }
+    4% {
+      width: 0;
+    }
+    60% {
+      width: 84%;
+    }
+  }
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    4% {
+      width: 0;
+    }
+    60% {
+      width: 84%;
+    }
+  }
+  .main__input {
+    padding: 60px 0 0;
+  }
+  .main__header-2 {
+    padding: 16px 0;
+    font-size: 3rem;
+  }
+  .main__header-2--comment {
+    font-size: 2.6rem;
+  }
+  .main__code-key {
+    font-size: 2.6rem;
+  }
+  .main__btn {
+    width: 50%;
+    margin: 32px 0;
+    font-size: 3.2rem;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1439px) {
+  .main__header {
+    width: 76%;
+    font-size: 5rem;
+  }
+  .main__header--typing {
+    -webkit-animation: typewriter 10s steps(44) 1.6s infinite alternate both, blinkTextCursor 400ms steps(44) infinite normal;
+            animation: typewriter 10s steps(44) 1.6s infinite alternate both, blinkTextCursor 400ms steps(44) infinite normal;
+  }
+  @-webkit-keyframes typewriter {
+    from {
+      width: 0;
+    }
+    4% {
+      width: 0;
+    }
+    60% {
+      width: 76%;
+    }
+  }
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    4% {
+      width: 0;
+    }
+    60% {
+      width: 76%;
+    }
+  }
+  .main__input {
+    padding: 60px 0 0;
+  }
+  .main__header-2 {
+    padding: 16px 0;
+    font-size: 4rem;
+  }
+  .main__header-2--comment {
+    font-size: 3.6rem;
+  }
+  .main__code-key {
+    font-size: 3.6rem;
+  }
+  .main__btn {
+    width: 50%;
+    margin: 32px 0;
+    font-size: 4.2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main {
+    padding: 60px 160px;
+  }
+  .main__header {
+    width: 66%;
+    font-size: 6rem;
+  }
+  @-webkit-keyframes typewriter {
+    from {
+      width: 0;
+    }
+    4% {
+      width: 0;
+    }
+    60% {
+      width: 66%;
+    }
+  }
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    4% {
+      width: 0;
+    }
+    60% {
+      width: 66%;
+    }
+  }
+  .main__header-2 {
+    padding: 14px 0;
+    font-size: 2.4rem;
+  }
+  .main__header-2--comment {
+    font-size: 2.4rem;
+  }
+  .main__code-key {
+    font-size: 3rem;
+  }
+  .main__btn {
+    width: 28%;
+    margin: 24px 0;
+    font-size: 3.4rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
