@@ -124,7 +124,7 @@ body {
 @media (max-width: 320px) {
   .main__header {
     width: 100%;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
   @-webkit-keyframes typewriter {
     from {
@@ -149,13 +149,13 @@ body {
     }
   }
   .main__header-2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .main__header-2--comment {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .main__code-key {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
   .main__btn {
     width: 64%;
